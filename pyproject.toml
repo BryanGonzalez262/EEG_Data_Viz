@@ -1,35 +1,26 @@
 [tool.poetry]
-name = "EEG_viz"
+name = "eeg-viz"
 version = "0.1.0"
-description = "eeg_viz"
-authors = ["BryanGonzalez262 <bsg262@gmail.com>"]
-license = "GNU Lesser General Public License v3.0"
-readme = "README.md"
-packages = [{include = "eeg_viz", from = "src"}]
-
-
-[project]
-name = "EEG_Viz"
-version = "0.1.0"
-description = "visualizing high dimensional EEG data"
-authors = [
-  {name = "CMI DAIR", email = "dair@childmind.org"}
-]
+description = "Visualizing high-dimensional EEG data"
+authors = ["Bryan Gonzalez <bsg262@gmail.com>", "CMI DAIR <dair@childmind.org>"]
 license = "MIT"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = ["hypertools (>=0.8.0,<0.9.0)"]
+packages = [{ include = "eeg_viz", from = "src" }]
 
-[dependency-groups]
-dev = [
-  "pytest>=8.3.4",
-  "mypy>=1.13.0",
-  "pre-commit>=4.0.1",
-  "pytest-cov>=6.0.0",
-  "ruff>=0.8.1",
-  "deptry>=0.23.0"
-]
-docs = ["pdoc>=15.0.0"]
+[tool.poetry.dependencies]
+python = "^3.11"
+hypertools = "^0.8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3.4"
+mypy = ">=1.13.0"
+pre-commit = ">=4.0.1"
+pytest-cov = ">=6.0.0"
+ruff = ">=0.8.1"
+deptry = ">=0.23.0"
+
+[tool.poetry.group.docs.dependencies]
+pdoc = ">=15.0.0"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
@@ -57,5 +48,5 @@ convention = "google"
 "tests/**/*.py" = []
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

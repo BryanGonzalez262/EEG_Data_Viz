@@ -9,13 +9,13 @@ packages = [{include = "eeg_viz", from = "src"}]
 
 
 [project]
-name = "app-name"
+name = "EEG_Viz"
 version = "0.1.0"
-description = "A beautiful description."
+description = "visualizing high dimensional EEG data"
 authors = [
   {name = "CMI DAIR", email = "dair@childmind.org"}
 ]
-license = "LGPL-2.1"
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []

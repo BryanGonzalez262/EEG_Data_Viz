@@ -2,7 +2,7 @@
 
 import pytest
 
-from app_name import algorithms
+from EEG_Viz import algorithms
 
 
 def test_fibonacci_success_0() -> None:

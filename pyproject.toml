@@ -1,3 +1,13 @@
+[tool.poetry]
+name = "EEG_viz"
+version = "0.1.0"
+description = "eeg_viz"
+authors = ["BryanGonzalez262 <bsg262@gmail.com>"]
+license = "GNU Lesser General Public License v3.0"
+readme = "README.md"
+packages = [{include = "eeg_viz", from = "src"}]
+
+
 [project]
 name = "app-name"
 version = "0.1.0"

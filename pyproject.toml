@@ -10,6 +10,7 @@ packages = [{ include = "eeg_viz", from = "src" }]
 [tool.poetry.dependencies]
 python = "^3.11"
 hypertools = "^0.8.0"
+ipykernel = "^6.29.5"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.3.4"

@@ -10,10 +10,10 @@ packages = [{ include = "eeg_viz", from = "src" }]
 [tool.poetry.dependencies]
 python = "^3.11"
 hypertools = "^0.8.0"
-ipykernel = "^6.29.5"
-pylsl = "^1.17.6"
-numpy = "1.26.4"
-matplotlib = "^3.10.3"
+ipykernel = "^7.1.0"
+pylsl = "^1.18.1"
+numpy = "2.4.2"
+matplotlib = "^3.10.8"
 seaborn = "^0.13.2"
 
 [tool.poetry.group.dev.dependencies]
